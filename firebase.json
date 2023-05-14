@@ -1,1 +1,10 @@
-{}
+{
+  "hosting": {
+    "public": "dist/ proyecto-ap-front",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
