@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 //import { environment } from 'src/environments/environment';
 import { Educacion } from '../model/educacion';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,9 @@ export class EducacionService {
   details(id: any) {
     throw new Error('Method not implemented.');
   }
-  URL =  'http://localhost:8080/educacion/';
+  URL =  'https://backendap-g3hk.onrender.com/';
+
+  //URL = environment.URL + 'educacion/';
 
   constructor(private HttpClient: HttpClient) { }
 

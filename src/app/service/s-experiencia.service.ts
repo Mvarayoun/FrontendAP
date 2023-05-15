@@ -3,13 +3,16 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 //import { environment } from 'src/environments/environment';
 import { Experiencia } from '../model/experiencia';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SExperienciaService {
 
-  URL = 'http://localhost:8080/explab/'
+  expURL = 'https://backendap-g3hk.onrender.com/explab/';
+  
+  URL = environment.URL + 'explab/';
 
   constructor(private httpClient: HttpClient) { }
 
