@@ -12,7 +12,7 @@ export class EducacionService {
   details(id: any) {
     throw new Error('Method not implemented.');
   }
-  URL =  'https://backendap-g3hk.onrender.com/';
+  URL =  'https://backendap-g3hk.onrender.com/educacion/';
 
   //URL = environment.URL + 'educacion/';
 

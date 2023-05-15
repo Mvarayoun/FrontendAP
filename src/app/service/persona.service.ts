@@ -12,7 +12,7 @@ import { environment } from 'src/environments/environment.prod';
 
 
 export class PersonaService {
-  URL = environment.URL + 'persona';
+  URL = environment.URL + 'personas/';
 
   constructor(private httpClient: HttpClient) { }
 

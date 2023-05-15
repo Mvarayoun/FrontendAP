@@ -10,9 +10,9 @@ import { environment } from 'src/environments/environment.prod';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'https://backendap-g3hk.onrender.com/';
+  authURL = 'https://backendap-g3hk.onrender.com/auth/';
 
-  URL = environment.URL + '/auth'; 
+  URL = environment.URL + 'auth/'; 
 
   constructor(private hhtpClient: HttpClient) { }
 
